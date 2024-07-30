@@ -1,0 +1,19 @@
+body{
+    background-color: aliceblue;
+}
+
+main{
+    display: flex;
+    margin-left: 80px;
+    margin-right: 50px;
+    gap: 40px;
+    
+}
+.mensaje{
+    background-image: url("imagenes/Muñeco.png");
+}
+
+.secundario{
+    display: block;
+
+}

@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
-    <link rel="stylesheet" href="">
-</head>
-<body>
-    <div class="logo"><img src="imagenes/Logo@2x.png" alt="logo"></div>
-        <input type="Ingresa el Texto a qui">
-        <p>!</p>
-        <p>solo letras minúsculas sin acentos</p>
-        <section></section>
-         <button>Encriptar</button>
-        <button>Desencriptar</button>
+    <link rel="stylesheet" href="style.css">
     
+</head>
+   
+<body>
+     <header><img class="logo" src="imagenes/Logo@2x.png" alt="logo alura latam latra a">
+    </header>
+    <main>
+        <section class="primario">
+            
+            <textarea class="texto__a_encriptar" cols="40" rows="6" placeholder="ingrese su texto a qui"></textarea>
+            <div class="botones">
+                <p>solo letras minúsculas sin acentos</p>
+                 <button class="encriptar">Encriptar</button>
+                 <button class="desencriptar">Desencriptar</button>
+            </div>
+         </section >
+           
+          <section class="secundario">
+            
+             <textarea class="mensaje" cols="60" rows="20" ></textarea>
+             <button class="copiar" >Copiar</button>
+         
+        </section>
+    </main>
+    <Script src="script.js"></script>
 </body>
 </html>
