@@ -1,49 +1,95 @@
+*{
+    background-color: #f3f5fc;
+    font-family: "inter", sans-seriF;
+    font-weight: 400 ;
+    font-size: 32px;
+    font-style: normal;
+    border-left: 10%;
+}
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 120px;    
+}     
 body{
-    background-color: aliceblue;
-    color: #000000;
-    height: 100vh;
-    
+        height: 100vh;
+
 }
 .columnas{
     display: flex;
-    margin-left: 80px;
+    margin-left: 50px;
     margin-right: 50px;
-    gap: 40px;
-    
+    gap: 80px;
 }
+
 .texto__a_encriptar{
+    color: #0a3871;
     align-self: center;
+    border: none;
+    padding: 8%;
+    margin-top: 60px;
+    border: 0%;
+    text-transform: lowercase;
+}
+::placeholder{color: #0a3871;}
+    .texto__a_encriptar:focus{
+        outline: none;
+    }
+h6{
+    align-self: center;
+    font-size: 15px;
+    margin-left: 60px;
+
 }
 .botones{
     box-sizing: border-box;
-    width: 100%;
-
-    align-self: flex-end;  
-    gap: 50px; 
-
+    width: 100;
+    margin-left: 80px;
+    align-self: center;  
+    margin-top: 18px;
 }
+.encriptar{
+    background-color: #0a3871;
+    color: white;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 300px;
+    border-radius: 30px;
+}
+.desencriptar{
+    background-color: white;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 300px;
+    border-radius: 30px;
+}
+
 .mensaje{
+    background: white;
     background-image: url("imagenes/Muñeco.png");
-    box-sizing: border-box;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    margin-left: 150px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
 }
-.texto_encriptado{
-    box-sizing: content-box;
-    align-self: flex-end;
-
+.mensaje:focus{
+    background-image: none;
+    outline: none;
 }
-.primario{
-    padding: 0;
-    border: 0;
-    margin: 0;
-}
-.texto_a_encriptar{
-    align-self: center;
-}
-
-.secundario{
-    display: block;
-
-}
-.cuadro_lateral{
-    border: 40px ridge ;
+.copiar{
+    
+    background-color: white;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 300px;
+    border-radius: 30px;
 }

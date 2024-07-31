@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -14,22 +17,25 @@
     <main class="columnas">
         <section class="primario">
             
-            <textarea class="texto__a_encriptar" cols="40" rows="6" placeholder="ingrese su texto a qui"></textarea>
-            <div class="botones">
-                <p>solo letras minúsculas sin acentos</p>
+            <textarea class="texto__a_encriptar" cols="30" rows="9" placeholder="texto a incriptar o encriptado"></textarea>
+            <div class="parametro">
+                <h6>solo letras minusculas sin acentos</h6>
+            </div>     
+                <div class="botones">
                  <button class="encriptar">Encriptar</button>
                  <button class="desencriptar">Desencriptar</button>
-            </div>
-         </section >
+                </div>
+        </section >
          
-        <div class="cuadro_lateral">
-          <section class="secundario">
-
-             <textarea class="mensaje" cols="60" rows="20" ></textarea>
-             <button class="copiar" >Copiar</button>
-         
+        
+        <section class="secundario">
+        
+            <textarea class="mensaje" cols="20" rows="12" ></textarea>
+                <div>    
+                 <button class="copiar" >Copiar</button>
+                </div>
         </section>
-        </div>
+        
     </main>
     <Script src="script.js">scrip.js</script>
 </body>
