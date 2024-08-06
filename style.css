@@ -5,6 +5,7 @@
     font-size: 32px;
     font-style: normal;
     border-left: 10%;
+    border-right: 10%;
 }
 .logo{
     padding-top: 10px;
@@ -15,11 +16,17 @@ body{
         height: 100vh;
         
 }
+.primario{
+    width: 400px;
+    height: 944px;
+    position: 50% 0%;
+    margin: 400px ;
+    flex-direction: row;
+}
+    
 .columnas{
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    gap: 80px;
+    justify-content: flex-start  ;
 }
 
 .texto__a_encriptar{
@@ -47,6 +54,8 @@ h6{
     margin-left: 80px;
     align-self: center;  
     margin-top: 18px;
+    flex-direction: column-reverse;
+    gap: 60px;
 }
 .encriptar{
     background-color: #0a3871;
@@ -67,7 +76,9 @@ h6{
     border-radius: 30px;
 }
 .secundario{
-    flex-direction: column;
+    width: 400px;
+    height: 944px;
+    position: fixed;
 }
 .mensaje{
     background: white;
@@ -79,14 +90,15 @@ h6{
     margin-left: 15px;
     margin-top: 20px;
     padding-left: 10px;
-    position: fixed;
+    /*position: fixed;*/
 }
 .mensaje:focus{
     background-image: none;
     outline: none;
 }
-.copiar{
 
+    
+.btn_copia{
     background-color: white;
     color: #0a3871;
     border: 1px solid #0a3871;
@@ -95,8 +107,5 @@ h6{
     width: 300px;
     border-radius: 30px;
     margin-left: 15px;
-}
-.btn_copia{
-    
     justify-content: center;
 }

@@ -17,13 +17,13 @@
     <main class="columnas">
         <section class="primario">
             
-            <textarea class="texto__a_encriptar" cols="30" rows="9" placeholder="texto a incriptar o encriptado"></textarea>
+            <textarea class="texto_a_encriptar" cols="30" rows="9" placeholder="texto a incriptar o a dencriptar"></textarea>
             <div class="parametro">
                 <h6> ! solo letras minusculas sin acentos</h6>
             </div>     
                 <div class="botones">
-                 <button class="encriptar">Encriptar</button>
-                 <button class="desencriptar">Desencriptar</button>
+                 <button class="encriptar" onclick = "btn_Encriptar()">Encriptar</button>
+                 <button class="desencriptar" onclick = "btn_Desencriptar()">Desencriptar</button>
                 </div>
         </section >
          
@@ -31,8 +31,8 @@
         <section class="secundario">
         
             <textarea class="mensaje" cols="20" rows="12" ></textarea>
-                <div class="btn_copia">    
-                 <button class="copiar" >Copiar</button>
+                <div >    
+                 <button class="btn_copia"onclick = "btm_copiar()">Copiar</button>
                 </div>
         </section>
         
