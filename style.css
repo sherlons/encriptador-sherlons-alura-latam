@@ -1,63 +1,67 @@
-*{
+* {
     background-color: #f3f5fc;
-    font-family: "inter", sans-seriF;
-    font-weight: 400 ;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
     font-size: 32px;
     font-style: normal;
-    border-left: 10%;
-    border-right: 10%;
-}
-.logo{
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 120px;    
-}     
-body{
-        height: 100vh;
-        
-}
-.primario{
-    width: 400px;
-    height: 944px;
-    position: 50% 0%;
-    margin: 400px ;
-    flex-direction: row;
-}
-    
-.columnas{
-    display: flex;
-    justify-content: flex-start  ;
 }
 
-.texto__a_encriptar{
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 120px;
+}     
+
+body {
+    height: 100vh;
+}
+
+.primario {
+    width: 400px;
+    height: 944px;
+    margin: 400px;
+    flex-direction: row;
+}
+
+.columnas {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.texto__a_encriptar {
     color: #0a3871;
     align-self: center;
     border: none;
     padding: 8%;
     margin-top: 60px;
-    border: 0%;
     text-transform: lowercase;
 }
-::placeholder{color: #0a3871;}
-    .texto__a_encriptar:focus{
-        outline: none;
-    }
-h6{
+
+::placeholder {
+    color: #0a3871;
+}
+
+.texto__a_encriptar:focus {
+    outline: none;
+}
+
+h6 {
     color: #0a3871;
     font-size: 15px;
     margin-left: 85px;
-
 }
-.botones{
+
+.botones {
     box-sizing: border-box;
-    width: 100;
+    width: 100%;
     margin-left: 80px;
     align-self: center;  
     margin-top: 18px;
     flex-direction: column-reverse;
     gap: 60px;
 }
-.encriptar{
+
+.encriptar, .desencriptar, .btn_copia {
     background-color: #0a3871;
     color: white;
     border: 1px solid #0a3871;
@@ -66,21 +70,19 @@ h6{
     width: 300px;
     border-radius: 30px;
 }
-.desencriptar{
+
+.desencriptar {
     background-color: white;
     color: #0a3871;
-    border: 1px solid #0a3871;
-    cursor: pointer;
-    height: 67px;
-    width: 300px;
-    border-radius: 30px;
 }
-.secundario{
+
+.secundario {
     width: 400px;
     height: 944px;
     position: fixed;
 }
-.mensaje{
+
+.mensaje {
     background: white;
     background-image: url("imagenes/Muñeco.png");
     background-repeat: no-repeat;
@@ -90,22 +92,14 @@ h6{
     margin-left: 15px;
     margin-top: 20px;
     padding-left: 10px;
-    /*position: fixed;*/
 }
-.mensaje:focus{
+
+.mensaje:focus {
     background-image: none;
     outline: none;
 }
 
-    
-.btn_copia{
-    background-color: white;
-    color: #0a3871;
-    border: 1px solid #0a3871;
-    cursor: pointer;
-    height: 67px;
-    width: 300px;
-    border-radius: 30px;
+.btn_copia {
     margin-left: 15px;
     justify-content: center;
 }
