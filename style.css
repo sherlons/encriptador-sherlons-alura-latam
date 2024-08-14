@@ -1,9 +1,10 @@
 body{
-    height: 100vh;
+    padding-bottom: 70px;
     box-sizing: border-box;
 }
 .columnas{
-    display:flex
+    
+    
     
 }
 .logo{
@@ -12,9 +13,6 @@ body{
     height: 40px;
     padding-left: 40px;
     gap: 40px;
-}
-.primario{
-
 }
 .texto__a_encriptar{
     width: 680px;
@@ -43,13 +41,8 @@ h6{
     font-weight: 400;
     font-style: normal;
     font-size: 12px;
-}
-.parametro{
-
-    color: #495057 line-height: 18px;
-   
-    
-    
+    color: #495057;
+     line-height: 18px;
 }
 .exclamción{
     font-size: 16px;
@@ -80,14 +73,14 @@ h6{
     background-color: white;
 }
 .secundario{
-    width: 400PX;
+    width: 50%;
     height: 600px;
-    top: 40px;
+    top: 100px;
     background: white;
     left: 1000px;
     border-radius:  32px;
     margin-left: 100px;
-    position: fixed;
+    position: fixed; 
 
 }
 .btn_copia{
@@ -105,7 +98,7 @@ h6{
     border-top: 72px;
     margin-left: 25px;
     margin-top: 10px;
-    background-image: url("imagenes/Muñeco.png");
+    background-image:  url("imagenes/Muñeco.png");
     background-repeat: no-repeat;
     align-items: center;
     border: none;  
@@ -113,8 +106,7 @@ h6{
    font-family: "inter";
    font-weight: 400;
    font-style: normal;
-   font-size: 36px;
-   
+   font-size: 36px;   
 }
 .mensaje:focus{
     background-image: none;
@@ -130,9 +122,48 @@ footer{
     font-size: 12px;
     padding: 12px;
     margin-top: 120px;
+    max-width:  100%;
+    
 }
-@media(max-width:1400px){
-    .columnas{
+@media(max-width:1500px){
+    
+    .texto__a_encriptar{
+        width: 688px;
+        height: 288px;
+        margin-left: 240px;
+        left: 40px;
+        right: 40px;
+        margin-top: 168px ;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 46px  ;
+        border: none;
+       font-family: "inter";
+       font-weight: 400;
+       font-style: normal;
+        line-height: 48px;
+    }
+    .secundario{
+        position: relative;
         flex-direction: column;
+        width: 688px;
+        height: 343px;
+        top: 101px;
+        left: 100px;
+        right: 40px;
+        background: white;
+        border-radius:  32px;
+        gap: 32px;
+        padding: 32px;        
+    }
+    .btn_copia{
+        width: 624px;
+        height: 67px;
+        gap:8px
+    }
+    footer{
+        position: relative;
+        margin-top: 340px;
+        width: 100%;
     }
 }
