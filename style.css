@@ -1,56 +1,61 @@
 body{
-    padding-bottom: 70px;
+    background-color: #e6f0f8;
+    width: auto;
+    height: auto;
     box-sizing: border-box;
+    
 }
-  
 .logo{
     width: 120px;
-    padding-top: 40px;
-    height: 40px;
-    padding-left: 40px;
-    gap: 40px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 40PX;
+    right: 12080px;
+}
+.columnas{
+    display: flex;
+    gap: 82px;
+    
+}
+.primario{
+    
+    height: 800px;
+    margin-left: 120px;
+    
 }
 .texto__a_encriptar{
+    background-color: #e6f0f8;
     width: 680px;
     height: 288px;
-    margin-left: 240px;
-    margin-top: 168px ;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 46px  ;
     border: none;
-   font-family: "inter";
-   font-weight: 400;
-   font-style: normal;
+    font-family: "inter";
+    font-weight: 400;
+    font-style: normal;
     line-height: 48px;
-}  
-.parametro{
-    width: "hug" 259px;
-    height: "hug" 18px;
-    border-top: 851px;
-    padding-left: 240px;
-    opacity: 80%;
+    padding-bottom: 70px;
 }
-
 h6{
     font-family: "inter";
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
+    font-size: .75rem;
     color: #495057;
-     line-height: 18px;
+    line-height: 18px;
 }
 .exclamción{
-    font-size: 16px;
-    color: black;
-    opacity: 100%;
+    width: 15px;
+    border: solid #495057;
+    border-radius: 90%;
+    background-color: #495057;
+    color: white;
 }
 .botones{
-    width:680px;
-    height:  67px;
-    border-top: 885px;
-    margin-left: 240px;
-    gap: 24px;
+    width: 680px;
+    height: 67px;
+    gap: 30px;
 }
 .encriptar{
     width: 328px;
@@ -59,6 +64,7 @@ h6{
     border-radius: 24px;
     color: white;
     background-color: #0A3871;
+    box-shadow: 0.5px 2px 2px 2px #495057;
 }
 .desencriptar{
     width: 328px;
@@ -67,99 +73,62 @@ h6{
     border-radius: 24px;
     color: #0A3871;
     background-color: white;
+    box-shadow: 0.5px 2px 2px 2px #495057;
 }
 .secundario{
-    width: 50%;
-    height: 600px;
-    top: 100px;
+    background-color: #f7f8f8;
+    width: 370px;
+    height: 588px;
+    margin-top: -50px;
     background: white;
-    left: 1000px;
     border-radius:  32px;
-    margin-left: 100px;
-    position: fixed; 
-
-}
-.btn_copia{
-     margin-left: 25px;
-     width: 328px;
-     height: 67px;
-     border:solid #0A3871 1px;
-     border-radius: 24px;
-     color: white;
-     background-color: #0A3871;
+    box-shadow: 2px 5px 5px 5px #495057 ;
+    
 }
 .mensaje{
-    width: 336px;
-    height: 500px;
+    width: 330px;
+    height: 480px;
     border-top: 72px;
     margin-left: 25px;
     margin-top: 10px;
     background-image:  url("imagenes/Muñeco.png");
     background-repeat: no-repeat;
-    align-items: center;
     border: none;  
     line-height: 48px;
    font-family: "inter";
    font-weight: 400;
    font-style: normal;
-   font-size: 36px;   
+   font-size: 2.25rem;   
 }
 .mensaje:focus{
+    background-color: white;
     background-image: none;
     outline: none;
 }
-
+.btn_copia{
+    margin-left: 25px;
+    width: 328px;
+    height: 67px;
+    border:solid #0A3871 1px;
+    border-radius: 24px;
+    color: white;
+    background-color: #0A3871;
+    box-shadow: 0.5px 2px 2px 2px #495057;
+}
 footer{
+    width: auto;
+    text-align: center;
+    height: 20px;
     color: white;
     background-color:#0A3871;
-    text-align: center;
     font-family: "inter";
     font-weight: 400;
-    font-size: 12px;
-    padding: 12px;
-    margin-top: 120px;
-    max-width:  100%;
-    
+    font-size: .75rem;
 }
-@media(max-width:1500px){
-    
-    .texto__a_encriptar{
-        width: 688px;
-        height: 288px;
-        margin-left: 240px;
-        left: 40px;
-        right: 40px;
-        margin-top: 168px ;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 46px  ;
-        border: none;
-       font-family: "inter";
-       font-weight: 400;
-       font-style: normal;
-        line-height: 48px;
-    }
-    .secundario{
-        position: relative;
-        flex-direction: column;
-        width: 688px;
-        height: 343px;
-        top: 101px;
-        left: 100px;
-        right: 40px;
-        background: white;
-        border-radius:  32px;
-        gap: 32px;
-        padding: 32px;        
-    }
-    .btn_copia{
-        width: 624px;
-        height: 67px;
-        gap:8px
-    }
-    footer{
-        position: relative;
-        margin-top: 340px;
-        width: 100%;
-    }
+/*@media(max-width:1050px){
+.columnas{
+    flex-direction: column;
+    width: 100vw;
+
+}
 }

@@ -37,7 +37,6 @@ function desencriptar(stringDesencriptar) {
     }
     return stringDesencriptar;
 }
-
 function btn_copiar() {
     mensaje.select();
     document.execCommand("copy");
